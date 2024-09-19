@@ -65,6 +65,7 @@ public class GalaxyService : IGalaxyService
         if (planet == null) throw new KeyNotFoundException("Planet not found");
 
         planet.GalaxyId = galaxyId;
+        galaxy.Planets = new List<Planet>();
         galaxy.Planets.Add(planet);
         await _context.SaveChangesAsync();
 

@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using DataAccess;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -10,7 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IPlanetService, PlanetService>();
 builder.Services.AddScoped<IGalaxyService, GalaxyService>();
-builder.Services.AddControllers();
+builder.Services.AddControllers() .AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
 builder.Services.AddOpenApiDocument();
 builder.Services.AddProblemDetails();
 builder.Services.AddFluentValidationAutoValidation()

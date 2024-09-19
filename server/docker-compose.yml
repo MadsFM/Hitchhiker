@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=mads
+      - POSTGRES_PASSWORD=1234A
+      - POSTGRES_DB=Universe
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data_hitchhiker:/var/lib/postgresql/data
+volumes:
+  postgres_data_hitchhiker:

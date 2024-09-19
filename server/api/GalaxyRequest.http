@@ -1,0 +1,42 @@
+GET http://localhost:9000/Galaxy
+Accept: application/json
+
+###
+
+POST localhost:9000/Galaxy
+Content-Type: application/json
+
+{
+  "name": "Astralis Prime",
+  "description": "A sprawling galaxy known for its radiant nebulae and ancient star systems. It is home to diverse life forms, from highly advanced civilizations to mysterious, uncharted regions where explorers frequently disappear."
+}
+
+###
+
+POST localhost:9000/Galaxy/1/planets/3
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "string",
+  "description": "string",
+  "planets": [
+    {
+      "id": 0,
+      "name": "string",
+      "description": "string",
+      "dateVisited": "2024-09-18T19:54:49.392Z",
+      "timesVisited": 0,
+      "population": 0,
+      "galaxyId": 0,
+      "galaxy": {
+        "id": 0,
+        "name": "string",
+        "description": "string",
+        "planets": [
+          "string"
+        ]
+      }
+    }
+  ]
+}

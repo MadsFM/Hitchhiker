@@ -1,0 +1,15 @@
+GET http://localhost:9000/Planet
+Accept: application/json
+
+###
+
+POST localhost:9000/Planet
+Content-Type: application/json
+
+{
+  "name": "Kaldris",
+  "description": "A cold, icy world in a remote galaxy, rich with hidden resources. Kaldris is sparsely populated, with its people living in massive underground cities, sheltered from the freezing temperatures above. They mine deep into the ice, harvesting valuable materials.",
+  "population": 300000000
+}
+
+###

@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "scaffold": "npx swagger-typescript-api -p http://localhost:9000/swagger/v1/swagger.json -o Api.ts"
   },
   "dependencies": {
     "react": "^18.3.1",

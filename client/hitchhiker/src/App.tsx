@@ -1,13 +1,9 @@
-
+import GalaxyComponent from "./Components/GalaxyComponent.tsx";
 
 function App() {
-
-
-  return (
-    <>
-      <div>Hello</div>
-    </>
-  )
+    return (
+        <GalaxyComponent/>
+    );
 }
 
-export default App
+export default App;

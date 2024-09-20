@@ -1,4 +1,4 @@
-import {atom} from "jotai/vanilla/atom";
+import {atom} from "jotai";
 import {Galaxy} from "../../../Api.ts/Api.ts";
 
 

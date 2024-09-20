@@ -32,9 +32,9 @@ public class GalaxyService : IGalaxyService
         return GalaxyDto.FromEntity(galaxy);
     }
 
-    public async Task<List<Galaxy>> GetAll() => await _context.Galaxies.ToListAsync();
+    public async Task<List<Galaxy>> GetAll() => await _context.Galaxies.Include(g => g.Planets).ToListAsync();
 
-    public async Task<Galaxy> GetById(int id) => await _context.Galaxies.FindAsync(id); 
+    public async Task<Galaxy> GetById(int id) => await _context.Galaxies.Include(g => g.Planets).FirstOrDefaultAsync(g => g.Id == id); 
 
     public async Task<GalaxyDto> UpdateGalaxy(UpdateGalaxyDto updateGalaxyDto)
     {
@@ -65,10 +65,14 @@ public class GalaxyService : IGalaxyService
         if (planet == null) throw new KeyNotFoundException("Planet not found");
 
         planet.GalaxyId = galaxyId;
-        galaxy.Planets = new List<Planet>();
+        if (galaxy.Planets == null)
+        {
+            galaxy.Planets = new List<Planet>();
+        }
+        
         galaxy.Planets.Add(planet);
         await _context.SaveChangesAsync();
 
-        return GalaxyDto.FromEntity(galaxy);
+        return GalaxyDto.FromEntity(await GetById(galaxyId));
     }
 }

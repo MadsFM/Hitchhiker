@@ -6,6 +6,7 @@ public class CreateGalaxyDto
 {
     public string Name { get; set; }
     public string Description { get; set; }
+    public string ImagePath { get; set; }
     
     
     public Galaxy ToGalaxy()
@@ -13,7 +14,8 @@ public class CreateGalaxyDto
         return new Galaxy
         {
             Name = Name,
-            Description = Description
+            Description = Description,
+            ImagePath = ImagePath
         };
     }
 }

@@ -68,6 +68,17 @@ public class GalaxyController : ControllerBase
     [HttpPost("{galaxyId}/planets/{planetId}")]
     public async Task<ActionResult<GalaxyDto>> AddPlanetToGalaxy(int galaxyId, int planetId)
     {
+        var planet = await _galaxyService.GetPlanetById(planetId);
+        if (planet == null)
+        {
+            return NotFound("Planet not found");
+        }
+
+        if (planet.GalaxyId != null)
+        {
+            return BadRequest("Planet already part of a galaxy");
+        }
+        
         var updatedGalaxy = await _galaxyService.AddPlanetToGalaxy(galaxyId, planetId);
         return Ok(updatedGalaxy);
     }

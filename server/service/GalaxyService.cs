@@ -75,4 +75,9 @@ public class GalaxyService : IGalaxyService
 
         return GalaxyDto.FromEntity(await GetById(galaxyId));
     }
+    
+    public async Task<Planet> GetPlanetById(int planetId)
+    {
+        return await _context.Planets.FindAsync(planetId);
+    }
 }

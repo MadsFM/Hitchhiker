@@ -12,4 +12,5 @@ public interface IGalaxyService
     Task<GalaxyDto> UpdateGalaxy(UpdateGalaxyDto updateGalaxyDto);
     Task<bool> DeleteGalaxy(int id);
     Task<GalaxyDto> AddPlanetToGalaxy(int galaxyId, int planetId);
+    Task<Planet> GetPlanetById(int planetId);
 }

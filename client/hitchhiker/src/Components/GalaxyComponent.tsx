@@ -42,7 +42,7 @@ function GalaxyComponent(){
                         >
                             {/* Adjust height of the image to fit the view */}
                             <img
-                                src="astralisp.webp"
+                                src={galaxy.imagePath}
                                 alt={galaxy.name}
                                 className="w-full h-full object-cover"
                             />
@@ -60,7 +60,7 @@ function GalaxyComponent(){
                         <a
                             key={galaxy.id}
                             href={`#item${index + 1}`}
-                            className="btn btn-xs bg-gray-700 text-yellow-400 hover:shadow-green-500 hover:scale-105 transition transform duration-200"
+                            className="btn btn-xs bg-gray-700 text-yellow-400 hover:shadow-green-500hover:scale-105 transition transform duration-200"
                         >
                             {galaxy.name}
                         </a>

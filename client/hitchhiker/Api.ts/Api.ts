@@ -14,6 +14,7 @@ export interface GalaxyDto {
   id?: number;
   name?: string;
   description?: string;
+  imagePath?: string;
   planets?: Planet[];
 }
 
@@ -38,12 +39,14 @@ export interface Galaxy {
   id?: number;
   name?: string;
   description?: string;
+  imagePath?: string;
   planets?: Planet[];
 }
 
 export interface CreateGalaxyDto {
   name?: string;
   description?: string;
+  imagePath?: string;
 }
 
 export interface UpdateGalaxyDto {

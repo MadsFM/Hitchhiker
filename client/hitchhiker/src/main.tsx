@@ -4,6 +4,7 @@ import App from './App.tsx'
 import './index.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import GalaxyComponent from "./Components/GalaxyComponent.tsx";
+import GalaxyOverview from "./Components/GalaxyOverview.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
               <Route path="/" element={<App />}/>
               <Route path="/galaxies" element={<GalaxyComponent/>}/>
+              <Route path="/galaxy/:name/overview" element={<GalaxyOverview/>}/>
           </Routes>
       </BrowserRouter>
   </StrictMode>,

@@ -1,6 +1,6 @@
 import {useAtom} from "jotai";
 import {galaxyAtom} from "../Atoms/GalaxyAtom.tsx";
-import {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {Api} from "../../Api.ts/Api.ts";
 import GalaxyStats from "./GalaxyStats.tsx";
 
@@ -8,6 +8,7 @@ import GalaxyStats from "./GalaxyStats.tsx";
 function GalaxyComponent(){
 
     const [galaxies, setGalaxies] = useAtom(galaxyAtom);
+    const [selectedGalaxy, setSelectedGalaxy] = useState(null);
     const api = new Api();
 
     useEffect(() => {
@@ -15,6 +16,8 @@ function GalaxyComponent(){
             try {
                 const response = await api.galaxy.galaxyGetAll();
                 setGalaxies(response.data);
+                // @ts-ignore
+                setSelectedGalaxy(response.data[0]);
                 console.log(response.data);
             } catch (error) {
                 console.log(error)
@@ -25,22 +28,27 @@ function GalaxyComponent(){
         }
     }, [galaxies, setGalaxies])
 
+
     return (
         <div className="flex flex-col items-center w-full h-screen overflow-hidden">
-            {/* Display Galaxy Stats for the first galaxy */}
-            {galaxies.length > 0 && galaxies[0].planets && (
-                <GalaxyStats galaxy={galaxies[0]} />
+            {/* Display Galaxy Stats as a full-width bar */}
+            {selectedGalaxy && (
+                <div className="w-full bg-gray-800 p-4">
+                    <GalaxyStats galaxy={selectedGalaxy} />
+                </div>
             )}
 
-            <div className="carousel w-full h-[calc(100vh-100px)] overflow-hidden">
+            {/* Carousel */}
+            <div className="carousel w-full h-[calc(100vh-150px)] overflow-hidden mt-5">
                 {galaxies.length > 0 ? (
                     galaxies.map((galaxy, index) => (
                         <div
                             key={galaxy.id}
                             id={`item${index + 1}`}
                             className="carousel-item w-full h-full"
+                            onClick={() => setSelectedGalaxy(galaxy)}
                         >
-                            {/* Adjust height of the image to fit the view */}
+                            {/* Galaxy Image */}
                             <img
                                 src={galaxy.imagePath}
                                 alt={galaxy.name}
@@ -60,7 +68,11 @@ function GalaxyComponent(){
                         <a
                             key={galaxy.id}
                             href={`#item${index + 1}`}
-                            className="btn btn-xs bg-gray-700 text-yellow-400 hover:shadow-green-500hover:scale-105 transition transform duration-200"
+                            className={`btn btn-xs bg-gray-700 text-yellow-400 
+                          transition transform duration-200
+                          hover:shadow-green-500 hover:scale-105 
+                          ${selectedGalaxy === galaxy ? 'bg-yellow-400 text-gray-700 shadow-green-500 scale-105' : ''}`}
+                            onClick={() => setSelectedGalaxy(galaxy)}
                         >
                             {galaxy.name}
                         </a>

@@ -48,6 +48,14 @@ const GalaxyStats: React.FC<GalaxyStatsProps> = ({ galaxy }) => {
                     <div className="stat-desc">In the galaxy</div>
                 </div>
             </div>
+            {/* Travel Button */}
+            <div className="mt-4 flex justify-center">
+                <button
+                    className="btn bg-yellow-500 hover:bg-yellow-400 text-gray-900"
+                >
+                    Travel to {galaxy.name}
+                </button>
+            </div>
         </div>
     );
 };

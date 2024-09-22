@@ -7,8 +7,9 @@ POST localhost:9000/Galaxy
 Content-Type: application/json
 
 {
-  "name": "Astralis Prime",
-  "description": "A sprawling galaxy known for its radiant nebulae and ancient star systems. It is home to diverse life forms, from highly advanced civilizations to mysterious, uncharted regions where explorers frequently disappear."
+  "name": "Orthenis Nebula",
+  "description": "Its core consists of a black hole surrounded by colorful stellar debris, and its star systems are scattered far apart, making travel between them long and dangerous. The galaxy is home to ancient, isolated civilizations with mysterious technologies and knowledge.",
+  "imagePath": "Orthenis.webp"
 }
 
 ###

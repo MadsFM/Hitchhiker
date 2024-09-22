@@ -7,9 +7,9 @@ POST localhost:9000/Planet
 Content-Type: application/json
 
 {
-  "name": "Elios",
-  "description": "A bright, sun-kissed planet orbiting close to a vibrant, young star.",
-  "population": 9000000000
+  "name": "Veridion",
+  "description": "A highly industrialized planet known for its vast factories and production facilities. Veridion is a key economic center in Orthenis Nebula, with towering megacities and sprawling industrial landscapes.",
+  "population": 13000000000
 }
 
 ###

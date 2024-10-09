@@ -50,18 +50,18 @@ public class GalaxyController : ControllerBase
     }
     
     [HttpPut("{Id}")]
-    public async Task<ActionResult<GalaxyDto>> UpdateGalaxy(int Id, UpdateGalaxyDto galaxyDto)
+    public async Task<ActionResult<GalaxyDto>> UpdateGalaxy(int Id, UpdateGalaxyDto updateGalaxyDto)
     {
-        if (Id != galaxyDto.Id)
+        if (Id != updateGalaxyDto.Id)
         {
-            return BadRequest("Product not found");
+            return BadRequest("Galaxy not found");
         }
 
         if (!ModelState.IsValid)
         {
             return BadRequest(ModelState);
         }
-        var updateGalaxy = await _galaxyService.UpdateGalaxy(galaxyDto);
+        var updateGalaxy = await _galaxyService.UpdateGalaxy(updateGalaxyDto);
         return Ok(updateGalaxy);
     }
 

@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
               <Route path="/" element={<App />}/>
               <Route path="/galaxies" element={<GalaxyComponent/>}/>
-              <Route path="/galaxy/:name/overview" element={<GalaxyOverview/>}/>
+
           </Routes>
       </BrowserRouter>
   </StrictMode>,

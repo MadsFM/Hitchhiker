@@ -1,5 +1,5 @@
 import React from 'react';
-import {Galaxy} from "../../Api.ts/Api.ts";
+import {Galaxy} from "../../../Api.ts/Api.ts";
 import PeopleIcon from '@mui/icons-material/People';
 import PublicIcon from '@mui/icons-material/Public';
 
@@ -14,7 +14,7 @@ const GalaxyStats: React.FC<GalaxyStatsProps> = ({ galaxy }) => {
         : 0;
 
     return (
-        <div className="w-full mb-5">
+        <div className="w-full mb-5 bg-blend-color">
             {/* Galaxy Name */}
             <h2 className="text-3xl font-bold text-center mb-3">
                 {galaxy.name}

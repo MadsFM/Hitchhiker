@@ -1,7 +1,7 @@
 import {useAtom} from "jotai";
-import {galaxyAtom} from "../Atoms/GalaxyAtom.tsx";
+import {galaxyAtom} from "../../Atoms/GalaxyAtom.tsx";
 import React, {useEffect, useState} from "react";
-import {Api} from "../../Api.ts/Api.ts";
+import {Api} from "../../../Api.ts/Api.ts";
 import GalaxyStats from "./GalaxyStats.tsx";
 
 

@@ -16,6 +16,6 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataAccess
-build_property.ProjectDir = /Users/mfm/Projekter/Hygge/HitchhikerProject/server/DataAccess/
+build_property.ProjectDir = /Users/mads/Documents/Projects/Hitchhiker/server/DataAccess/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

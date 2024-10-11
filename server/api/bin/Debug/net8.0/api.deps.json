@@ -707,7 +707,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.0-rc.1"
         },
         "runtime": {
-          "DataAccess.dll": {}
+          "DataAccess.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "service/1.0.0": {
@@ -718,7 +721,10 @@
           "FluentValidation.DependencyInjectionExtensions": "11.10.0"
         },
         "runtime": {
-          "service.dll": {}
+          "service.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

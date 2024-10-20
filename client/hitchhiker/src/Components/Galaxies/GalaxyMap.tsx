@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { Api, GalaxyDto } from "../../../Api.ts/Api.ts";
 import GalaxyStats from "./GalaxyStats.tsx";
-import ScaleComponent from "../ScaleComponent.tsx";
 
 const api = new Api();
 
@@ -56,42 +55,40 @@ const GalaxyMap = () => {
         // Create group for galaxies
         const galaxyGroup = svg.append("g");
 
-        galaxyGroup.selectAll("circle")
+        galaxyGroup.selectAll("image")
             .data(galaxies)
             .enter()
-            .append("circle")
-            .attr("cx", (d, i) => {
+            .append("image")
+            .attr("xlink:href", (d) => d.imagePath)
+            .attr("x", (d, i) => {
+                const r = Math.random() * 200 + 50;
+                const theta = Math.random() *2 * Math.PI;
+                const [x, y] = polarToCartesian(r, theta);
+                return centerX + x - 15;
+            })
+            .attr("y", (d, i) => {
                 const r = Math.random() * 200 + 50; // Random radius (distance from center)
                 const theta = Math.random() * 2 * Math.PI; // Random angle in radians
                 const [x, y] = polarToCartesian(r, theta); // Get Cartesian coordinates
-                return centerX + x; // Offset by center of the map
+                return centerY + y - 15;  // Offset by center of the map
             })
-            .attr("cy", (d, i) => {
-                const r = Math.random() * 200 + 50;
-                const theta = Math.random() * 2 * Math.PI;
-                const [x, y] = polarToCartesian(r, theta);
-                return centerY + y;
-            })
-            .attr("r", 20) // Radius of galaxy marker
-            .attr("fill", "cyan")
-            .attr("stroke", "black")
-            .attr("stroke-width", 2)
-            .on("mouseover", (event, d) => {
-                d3.select(event.currentTarget)
-                    .attr("fill", "lightblue")
-                    .attr("r", 25);
-
-                // Set the selected galaxy to display GalaxyStats
+            .attr("width", 30) // Radius of galaxy marker
+            .attr("height", 30)
+            .on("click", (event, d) => {
                 setSelectedGalaxy(d);
-            })
-            .on("mouseout", (event) => {
-                d3.select(event.currentTarget)
-                    .attr("fill", "cyan")
-                    .attr("r", 20);
-
-                // Clear the selected galaxy when mouse out
-                setSelectedGalaxy(null);
             });
+
+        const handleClickToClose = (event) => {
+            if(!svg.node().contains(event.target)){
+                setSelectedGalaxy(null);
+            }
+        };
+
+        document.addEventListener("click", handleClickToClose);
+
+        return () => {
+            document.removeEventListener("click", handleClickToClose);
+        }
     }, [galaxies]);
 
     return (

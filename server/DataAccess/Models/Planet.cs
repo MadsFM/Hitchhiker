@@ -10,5 +10,6 @@ public class Planet
     public long Population { get; set; }
     public int? GalaxyId { get; set; }
     public Galaxy? Galaxy { get; set; }
+    public string ImagePath { get; set; }
     
 }

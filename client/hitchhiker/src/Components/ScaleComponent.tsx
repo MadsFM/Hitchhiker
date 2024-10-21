@@ -14,8 +14,8 @@ const ScaleComponent = () => {
     });
 
     return (
-        <div style={{ position: 'absolute', bottom: '20px', left: '20px', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '5px 10px', borderRadius: '5px' }}>
-            Scale: {scale.toFixed(2)} lightyears
+        <div className="absolute bottom-5 bg-opacity-50 bg-black text-cyan-400 shadow-lg p-4 rounded-lg" >
+            <span className="font-orbiton">Scale: {scale.toFixed(2)} lightyears</span>
         </div>
     );
 };

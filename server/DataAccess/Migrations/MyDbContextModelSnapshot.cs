@@ -65,6 +65,10 @@ namespace DataAccess.Migrations
                     b.Property<int?>("GalaxyId")
                         .HasColumnType("integer");
 
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");

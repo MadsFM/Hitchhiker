@@ -7,7 +7,7 @@ VALUES
     (1, 'Astralis Prime', 'A sprawling galaxy known for its radiant nebulae and ancient star systems. It is home to diverse life forms, from highly advanced civilizations to mysterious, uncharted regions where explorers frequently disappear.', 'astralisp.webp'),
     (2, 'Orthenis Nebula', 'Its core consists of a black hole surrounded by colorful stellar debris, and its star systems are scattered far apart, making travel between them long and dangerous. The galaxy is home to ancient, isolated civilizations with mysterious technologies and knowledge.', 'Orthenis.webp');
 
-insert into "Planets" ("Id", "Name", "Description", "DateVisited", "TimesVisited", "Population", "ImagePath", "GalaxyId")
+insert into "Planets" ("Id", "Name", "Description", "DateVisited", "TimesVisited", "Population", Imagepath, "GalaxyId")
 VALUES 
     (1, 'Kaldris', 'A cold, icy world in a remote galaxy, rich with hidden resources. Kaldris is sparsely populated, with its people living in massive underground cities, sheltered from the freezing temperatures above. They mine deep into the ice, harvesting valuable materials.', null, 0, 300000000, '', 1), 
     (2, 'Zephyria', 'A planet with vast windswept landscapes, evoking mystery and beauty.', null, 0, 3200000000, '', 1),

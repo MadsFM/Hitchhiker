@@ -6,9 +6,10 @@ import PublicIcon from '@mui/icons-material/Public';
 
 interface GalaxyStatsProps {
     galaxy: Galaxy;
+    onTravel: (galaxy: Galaxy) =>  void;
 }
 
-const GalaxyStats: React.FC<GalaxyStatsProps> = ({ galaxy }) => {
+const GalaxyStats: React.FC<GalaxyStatsProps> = ({ galaxy , onTravel}) => {
     const totalPopulation = galaxy.planets
         ? galaxy.planets.reduce((sum, planet) => sum + (planet.population || 0), 0)
         : 0;
@@ -52,6 +53,7 @@ const GalaxyStats: React.FC<GalaxyStatsProps> = ({ galaxy }) => {
             {/* Travel Button */}
             <div className="mt-6 flex justify-center">
                 <button
+                    onClick={() => onTravel(galaxy)}
                     className="btn bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-2 rounded-lg shadow-lg"
                 >
                     Travel to {galaxy.name}

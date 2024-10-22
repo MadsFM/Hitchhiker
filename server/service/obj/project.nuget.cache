@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gx8YMOJqYOw=",
+  "dgSpecHash": "fFxS8+HE9ec=",
   "success": true,
-  "projectFilePath": "/Users/mfm/Projekter/Hygge/HitchhikerProject/server/service/service.csproj",
+  "projectFilePath": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/service/service.csproj",
   "expectedPackageFiles": [
     "/Users/mfm/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

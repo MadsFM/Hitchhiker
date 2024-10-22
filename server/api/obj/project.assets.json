@@ -4144,11 +4144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mfm/Projekter/Hygge/HitchhikerProject/server/api/api.csproj",
+      "projectUniqueName": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/api/api.csproj",
       "projectName": "api",
-      "projectPath": "/Users/mfm/Projekter/Hygge/HitchhikerProject/server/api/api.csproj",
+      "projectPath": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/api/api.csproj",
       "packagesPath": "/Users/mfm/.nuget/packages/",
-      "outputPath": "/Users/mfm/Projekter/Hygge/HitchhikerProject/server/api/obj/",
+      "outputPath": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mfm/.nuget/NuGet/NuGet.Config"
@@ -4163,8 +4163,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/mfm/Projekter/Hygge/HitchhikerProject/server/service/service.csproj": {
-              "projectPath": "/Users/mfm/Projekter/Hygge/HitchhikerProject/server/service/service.csproj"
+            "/Users/mfm/Projekter/Hygge/Hitchhiker/server/service/service.csproj": {
+              "projectPath": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/service/service.csproj"
             }
           }
         }

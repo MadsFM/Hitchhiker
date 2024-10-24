@@ -1,21 +1,24 @@
-import React, { useEffect, useRef, useState } from 'react';
+import  { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import { Api, GalaxyDto } from "../../../Api.ts/Api.ts";
+import {Api, Galaxy, GalaxyDto} from "../../../Api.ts/Api.ts";
 import GalaxyStats from "./GalaxyStats.tsx";
+import {useNavigate} from "react-router-dom";
+import {ROUTE} from "../../Constants/Routes.ts";
 
 const api = new Api();
 
 const GalaxyMap = () => {
     const [galaxies, setGalaxies] = useState<GalaxyDto[]>([]);
-    const [selectedGalaxy, setSelectedGalaxy] = useState<GalaxyDto | null>(null); // Track selected galaxy for GalaxyStats
+    const [selectedGalaxy, setSelectedGalaxy] = useState<GalaxyDto | null>(null);
     const [scale, setScale] = useState(112000);
     const svgRef = useRef(null);
     const width = 800;
     const height = 600;
-    const centerX = width / 2; // Center X of the map
-    const centerY = height / 2; // Center Y of the map
+    const centerX = width / 2;
+    const centerY = height / 2;
+    const navigate = useNavigate();
 
-    // Function to convert polar coordinates to Cartesian
+
     const polarToCartesian = (r, theta) => {
         const x = r * Math.cos(theta);
         const y = r * Math.sin(theta);
@@ -37,10 +40,8 @@ const GalaxyMap = () => {
     useEffect(() => {
         const svg = d3.select(svgRef.current);
 
-        // Remove existing content before re-rendering
         svg.selectAll("*").remove();
 
-        // Set up zoom and pan behavior
         const zoom = d3.zoom()
             .scaleExtent([0.5, 5])
             .on('zoom', (event) => {
@@ -52,7 +53,6 @@ const GalaxyMap = () => {
 
         svg.call(zoom);
 
-        // Create group for galaxies
         const galaxyGroup = svg.append("g");
 
         galaxyGroup.selectAll("image")
@@ -67,12 +67,12 @@ const GalaxyMap = () => {
                 return centerX + x - 15;
             })
             .attr("y", (d, i) => {
-                const r = Math.random() * 200 + 50; // Random radius (distance from center)
-                const theta = Math.random() * 2 * Math.PI; // Random angle in radians
-                const [x, y] = polarToCartesian(r, theta); // Get Cartesian coordinates
-                return centerY + y - 15;  // Offset by center of the map
+                const r = Math.random() * 200 + 50;
+                const theta = Math.random() * 2 * Math.PI;
+                const [x, y] = polarToCartesian(r, theta);
+                return centerY + y - 15;
             })
-            .attr("width", 30) // Radius of galaxy marker
+            .attr("width", 30)
             .attr("height", 30)
             .on("click", (event, d) => {
                 setSelectedGalaxy(d);
@@ -91,6 +91,24 @@ const GalaxyMap = () => {
         }
     }, [galaxies]);
 
+    const travelToGalaxy = (galaxy: Galaxy) => {
+        const svg = d3.select(svgRef.current)
+
+        const  galaxyPos = {
+            x: centerX + Math.random() * 200 + 50,
+            y: centerY + Math.random() * 200 + 50
+        };
+
+        svg.transition()
+            .duration(2000)
+            .call(d3.zoom().transform, d3.zoomIdentity.translate(-galaxyPos.x + width / 2, -galaxyPos.y + height / 2).scale(2));
+
+        setTimeout(() => {
+            setSelectedGalaxy(null);
+            navigate(`${ROUTE.UNIVERSEMAP}/${galaxy.id}`);
+        }, 2000);
+    }
+
     return (
         <div className="flex justify-center items-center h-screen">
             <div
@@ -107,7 +125,7 @@ const GalaxyMap = () => {
                 {selectedGalaxy && (
                     <div
                         className="absolute bottom-10 left-10 bg-opacity-80 bg-black text-cyan-400 shadow-lg rounded-lg p-4">
-                        <GalaxyStats galaxy={selectedGalaxy}/>
+                        <GalaxyStats galaxy={selectedGalaxy} onTravel={travelToGalaxy}/>
                     </div>
                 )}
                 <div className="absolute bottom-5 left-5 bg-gray-800 text-white p-2 rounded-lg shadow-md">

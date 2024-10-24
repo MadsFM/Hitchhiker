@@ -1,3 +1,3 @@
 
 
-export const ROUTE = {GALAXIES: '/galaxies', GALAXYMAP: '/galaxymap'};
+export const ROUTE = {GALAXIES: '/galaxies', GALAXYMAP: '/galaxymap', UNIVERSEMAP: '/universemap'};

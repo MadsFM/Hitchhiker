@@ -5,10 +5,11 @@ namespace Test.Mocks;
 
 public class Constant
 {
+    private static int _planetId = 1;
     public static Planet GetPlanet(int GalaxyId)
     {
         return new Faker<Planet>()
-            .RuleFor(p => p.Id, f => f.IndexFaker + 1)
+            .RuleFor(p => p.Id, f => _planetId ++)
             .RuleFor(p => p.Name, f => f.Commerce.ProductName())
             .RuleFor(p => p.Description, f => f.Commerce.ProductDescription())
             .RuleFor(p => p.Population, f => f.Random.Long(2000000, 100000000000))

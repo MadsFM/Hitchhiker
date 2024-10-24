@@ -3557,19 +3557,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/mfm/.nuget/packages/": {}
+    "/Users/mads/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/DataAccess/DataAccess.csproj",
+      "projectUniqueName": "/Users/mads/Documents/Projects/Hitchhiker/server/DataAccess/DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/DataAccess/DataAccess.csproj",
-      "packagesPath": "/Users/mfm/.nuget/packages/",
-      "outputPath": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/DataAccess/obj/",
+      "projectPath": "/Users/mads/Documents/Projects/Hitchhiker/server/DataAccess/DataAccess.csproj",
+      "packagesPath": "/Users/mads/.nuget/packages/",
+      "outputPath": "/Users/mads/Documents/Projects/Hitchhiker/server/DataAccess/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mfm/.nuget/NuGet/NuGet.Config"
+        "/Users/mads/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3641,7 +3641,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

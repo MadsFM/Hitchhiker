@@ -4139,19 +4139,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/mfm/.nuget/packages/": {}
+    "/Users/mads/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/api/api.csproj",
+      "projectUniqueName": "/Users/mads/Documents/Projects/Hitchhiker/server/api/api.csproj",
       "projectName": "api",
-      "projectPath": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/api/api.csproj",
-      "packagesPath": "/Users/mfm/.nuget/packages/",
-      "outputPath": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/api/obj/",
+      "projectPath": "/Users/mads/Documents/Projects/Hitchhiker/server/api/api.csproj",
+      "packagesPath": "/Users/mads/.nuget/packages/",
+      "outputPath": "/Users/mads/Documents/Projects/Hitchhiker/server/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mfm/.nuget/NuGet/NuGet.Config"
+        "/Users/mads/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4163,8 +4163,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/mfm/Projekter/Hygge/Hitchhiker/server/service/service.csproj": {
-              "projectPath": "/Users/mfm/Projekter/Hygge/Hitchhiker/server/service/service.csproj"
+            "/Users/mads/Documents/Projects/Hitchhiker/server/service/service.csproj": {
+              "projectPath": "/Users/mads/Documents/Projects/Hitchhiker/server/service/service.csproj"
             }
           }
         }
@@ -4208,7 +4208,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

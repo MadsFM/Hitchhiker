@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "VhjcimZd9wQ=",
-  "success": false,
+  "dgSpecHash": "kYyGk2ATLe8=",
+  "success": true,
   "projectFilePath": "/Users/mfm/Projekter/Hygge/Hitchhiker/Test/Test.csproj",
   "expectedPackageFiles": [
     "/Users/mfm/.nuget/packages/bogus/35.6.1/bogus.35.6.1.nupkg.sha512",
@@ -9,16 +9,19 @@
     "/Users/mfm/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/docker.dotnet/3.125.15/docker.dotnet.3.125.15.nupkg.sha512",
     "/Users/mfm/.nuget/packages/docker.dotnet.x509/3.125.15/docker.dotnet.x509.3.125.15.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.10.0/fluentvalidation.dependencyinjectionextensions.11.10.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.aspnetcore.mvc.testing/8.0.8/microsoft.aspnetcore.mvc.testing.8.0.8.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.aspnetcore.testhost/8.0.8/microsoft.aspnetcore.testhost.8.0.8.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.entityframeworkcore/8.0.8/microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.8/microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.8/microsoft.entityframeworkcore.analyzers.8.0.8.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.entityframeworkcore/9.0.0-rc.1.24451.1/microsoft.entityframeworkcore.9.0.0-rc.1.24451.1.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0-rc.1.24451.1/microsoft.entityframeworkcore.abstractions.9.0.0-rc.1.24451.1.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0-rc.1.24451.1/microsoft.entityframeworkcore.analyzers.9.0.0-rc.1.24451.1.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.entityframeworkcore.inmemory/8.0.8/microsoft.entityframeworkcore.inmemory.8.0.8.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.0-rc.1.24451.1/microsoft.entityframeworkcore.relational.9.0.0-rc.1.24451.1.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.0-rc.1.24431.7/microsoft.extensions.caching.abstractions.9.0.0-rc.1.24431.7.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.extensions.caching.memory/9.0.0-rc.1.24431.7/microsoft.extensions.caching.memory.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.configuration/9.0.0-rc.1.24431.7/microsoft.extensions.configuration.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.0-rc.1.24431.7/microsoft.extensions.configuration.abstractions.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
@@ -27,8 +30,8 @@
     "/Users/mfm/.nuget/packages/microsoft.extensions.configuration.fileextensions/9.0.0-rc.1.24431.7/microsoft.extensions.configuration.fileextensions.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.configuration.json/9.0.0-rc.1.24431.7/microsoft.extensions.configuration.json.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.configuration.usersecrets/8.0.0/microsoft.extensions.configuration.usersecrets.8.0.0.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.0-rc.1.24431.7/microsoft.extensions.dependencyinjection.9.0.0-rc.1.24431.7.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0-rc.1.24431.7/microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.dependencymodel/8.0.1/microsoft.extensions.dependencymodel.8.0.1.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.diagnostics/8.0.0/microsoft.extensions.diagnostics.8.0.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.diagnostics.abstractions/8.0.0/microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
@@ -37,14 +40,14 @@
     "/Users/mfm/.nuget/packages/microsoft.extensions.filesystemglobbing/9.0.0-rc.1.24431.7/microsoft.extensions.filesystemglobbing.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.hosting/8.0.0/microsoft.extensions.hosting.8.0.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.hosting.abstractions/8.0.0/microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.extensions.logging/9.0.0-rc.1.24431.7/microsoft.extensions.logging.9.0.0-rc.1.24431.7.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.0-rc.1.24431.7/microsoft.extensions.logging.abstractions.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.logging.configuration/8.0.0/microsoft.extensions.logging.configuration.8.0.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.logging.console/8.0.0/microsoft.extensions.logging.console.8.0.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.logging.debug/8.0.0/microsoft.extensions.logging.debug.8.0.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.logging.eventlog/8.0.0/microsoft.extensions.logging.eventlog.8.0.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.logging.eventsource/8.0.0/microsoft.extensions.logging.eventsource.8.0.0.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/microsoft.extensions.options/9.0.0-rc.1.24431.7/microsoft.extensions.options.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.options.configurationextensions/8.0.0/microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.extensions.primitives/9.0.0-rc.1.24431.7/microsoft.extensions.primitives.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/microsoft.net.test.sdk/17.8.0/microsoft.net.test.sdk.17.8.0.nupkg.sha512",
@@ -85,7 +88,7 @@
     "/Users/mfm/.nuget/packages/system.collections.concurrent/4.3.0/system.collections.concurrent.4.3.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/system.console/4.3.0/system.console.4.3.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
-    "/Users/mfm/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "/Users/mfm/.nuget/packages/system.diagnostics.diagnosticsource/9.0.0-rc.1.24431.7/system.diagnostics.diagnosticsource.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/mfm/.nuget/packages/system.diagnostics.eventlog/8.0.0/system.diagnostics.eventlog.8.0.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/system.diagnostics.tools/4.3.0/system.diagnostics.tools.4.3.0.nupkg.sha512",
     "/Users/mfm/.nuget/packages/system.diagnostics.tracing/4.3.0/system.diagnostics.tracing.4.3.0.nupkg.sha512",
@@ -148,15 +151,5 @@
     "/Users/mfm/.nuget/packages/xunit.extensibility.execution/2.5.3/xunit.extensibility.execution.2.5.3.nupkg.sha512",
     "/Users/mfm/.nuget/packages/xunit.runner.visualstudio/2.5.3/xunit.runner.visualstudio.2.5.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.0-rc.1.24451.1 to 8.0.8. Reference the package directly from the project to select a different version. \n Test -> DataAccess -> Microsoft.EntityFrameworkCore (>= 9.0.0-rc.1.24451.1) \n Test -> Microsoft.EntityFrameworkCore (>= 8.0.8)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

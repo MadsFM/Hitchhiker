@@ -27,10 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="ApiIntergration Test\" />
-    </ItemGroup>
-
-    <ItemGroup>
+      <ProjectReference Include="..\server\api\api.csproj" />
       <ProjectReference Include="..\server\DataAccess\DataAccess.csproj" />
       <ProjectReference Include="..\server\service\service.csproj" />
     </ItemGroup>
